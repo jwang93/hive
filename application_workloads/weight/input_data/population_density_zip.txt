@@ -1,0 +1,8 @@
+TABLE NAME: population_density_zip
+TABLE SIZE: 33145
+
+SCHEMA: 
+zip_code            	int                 	                    
+population          	int                 	                    
+land_sq_mi          	double              	                    
+pop_density_sq_mi   	double 
