@@ -18,4 +18,4 @@ STORED AS TEXTFILE
 LOCATION '/usr/local/apache-hive-1.0.0-bin/warehouse/income';
 
 LOAD DATA LOCAL INPATH '/home/niyujie/Documents/Yujie_dataset/application_workloads/Yujie_workload/input/income.csv' 
-OVERWRITE into TABLE income;  
+OVERWRITE into TABLE income;
