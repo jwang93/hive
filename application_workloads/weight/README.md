@@ -17,12 +17,19 @@ There are two datasets used for this workload. Both of these datasets can be fou
 1) weight_data.csv   
 This dataset contained information on the number of overweight children for given zip codes. To view the explicit schema of this dataset, visit *weight/input_data/weight_data.txt*.
     
-2) population_zip.csv 
-This dataset contained information on the number of people living in a specific zip code.   
+2) population_density_zip.csv 
+This dataset contained information on the population density of a specific zip code. To view the explicit schema of this dataset, visit *weight/input_data/population_density_zip.txt*.
+
 ##### Running the Workload 
 Run the command: ``` bin/hive -f query/overweight_zips.sql ```   
 This will execute the statements from the file **overweight_zips.sql** in batch mode. 
 
 ##### Results 
+Average population density per zip code: **1254.65**  
+Average population density per zip code for the top 100 overweight zip codes: **953.67** (-300.98)  
+Average population density per zip code for the least 100 overweight zip codes: **1454.06** (+199.41)
+
+Given these numbers, it seems like it is definitely the case that the more overweight a zip code is, the less dense the population is. This may be because a lower population density means that people rely more on driving for transportation as opposed to more crowded areas where people are more likely to walk, bike, or take public transportation. 
+
 
 
